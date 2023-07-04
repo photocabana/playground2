@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .text {
+            color: blueviolet;
+            text-align: center;
+            justify-content: center;
+        }
+        .boxes {
+            display: flex;
+            flex-direction: space-between;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        .squares {
+            width: 175px;
+            height: 175px;
+            border: 3px solid black;
+            margin: 20px;
+        }
+    </style>
+    <title>Playground</title>
+</head>
+<body>
+    <div class="text">
+        <h1>Welcome</h1>
+        <h2>How many boxes can you find?</h2>
+    </div>
+    <div class="boxes">
+        {% for i in range( 0, num ) %}
+
+        <div class="squares" style="background-color: {{color}}"></div>
+
+        {% endfor %}
+    </div>
+</body>
+</html>
